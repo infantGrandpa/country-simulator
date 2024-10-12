@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace CountrySimulator.Resources
+namespace Abraham.CountrySimulator.Resources
 {
     [System.Serializable]
     public class ResourceStack

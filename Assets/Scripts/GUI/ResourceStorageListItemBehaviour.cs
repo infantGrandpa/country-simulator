@@ -1,4 +1,4 @@
-using CountrySimulator.Resources;
+using Abraham.CountrySimulator.Resources;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;

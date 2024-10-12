@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using CountrySimulator.Resources;
+using Abraham.CountrySimulator.Resources;
 using UnityEngine;
 
 namespace Abraham.CountrySimulator.GUI

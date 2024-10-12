@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CountrySimulator.Resources
+namespace Abraham.CountrySimulator.Resources
 {
     [CreateAssetMenu(fileName = "New Resource", menuName = "Resource")]
     public class Resource : ScriptableObject

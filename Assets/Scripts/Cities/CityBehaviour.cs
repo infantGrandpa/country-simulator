@@ -1,9 +1,8 @@
-using System;
 using Abraham.CountrySimulator.GUI;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace CountrySimulator.Cities
+namespace Abraham.CountrySimulator.Cities
 {
     public class CityBehaviour : MonoBehaviour
     {
