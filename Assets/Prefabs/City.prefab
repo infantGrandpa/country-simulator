@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7297307065236845100}
   - component: {fileID: 1141965304100200712}
   - component: {fileID: 19258822361474371}
+  - component: {fileID: 7055913444702306526}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cityName: 
   cityLabelPrefab: {fileID: 5731946268314714682, guid: 21333c8d75ece254989b3858f5fd455c, type: 3}
+--- !u!114 &7055913444702306526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347700424648879314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6385ce08de226714ebee7ffce26db844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tradableResources:
+  - {fileID: 11400000, guid: a50eb0fc9eddfc54080d8af96181caf8, type: 2}
+  - {fileID: 11400000, guid: 6ebccf33c682a524cbc3274f3eaa08bc, type: 2}
+  resourcesInStorage: []
