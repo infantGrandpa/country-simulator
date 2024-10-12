@@ -8,11 +8,10 @@ namespace Abraham.CountrySimulator.GUI
     {
         [SerializeField] GameObject resourceStorageListItemPrefab;
         [SerializeField] Vector2 labelOffset;
+        [SerializeField] float rowHeight = 20;
         
         RectTransform _rectTransform;
         
-        
-
         List<ResourceStorageListItemBehaviour> _resourceStorageListItems = new List<ResourceStorageListItemBehaviour>();
 
         public void InitializeLabel(List<ResourceStack> resourceStacks, Vector3 worldPosition)
@@ -21,6 +20,7 @@ namespace Abraham.CountrySimulator.GUI
             
             CreateResourceListItems(resourceStacks);
             SetLabelPosition(worldPosition);
+            SetListHeight();
         }
         
         void SetLabelPosition(Vector3 worldPosition)
@@ -31,7 +31,14 @@ namespace Abraham.CountrySimulator.GUI
             _rectTransform.anchoredPosition = finalPosition;
         }
 
-        private void CreateResourceListItems(List<ResourceStack> resourceStacks)
+        void SetListHeight()
+        {
+            float listWidth = _rectTransform.sizeDelta.x;
+            float listHeight = rowHeight * _resourceStorageListItems.Count;
+            _rectTransform.sizeDelta = new Vector2(listWidth, listHeight);
+        }
+
+        void CreateResourceListItems(List<ResourceStack> resourceStacks)
         {
             foreach (ResourceStack thisResourceStack in resourceStacks) {
                 GameObject newListItemGameObject = Instantiate(resourceStorageListItemPrefab, transform);
@@ -43,6 +50,7 @@ namespace Abraham.CountrySimulator.GUI
                 }
 
                 newListItem.InitializeListItem(thisResourceStack);
+                _resourceStorageListItems.Add(newListItem);
             }
         }
     }

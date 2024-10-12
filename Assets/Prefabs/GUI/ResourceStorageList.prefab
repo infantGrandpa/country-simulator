@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4286741077008687533}
   - component: {fileID: 2001860439431864578}
   - component: {fileID: 476633666514636297}
+  - component: {fileID: 9159573939375039746}
   m_Layer: 0
   m_Name: ResourceStorageList
   m_TagString: Untagged
@@ -90,3 +91,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceStorageListItemPrefab: {fileID: 5480167841971012400, guid: ae7d09275202d2b448699d283783410d, type: 3}
+  labelOffset: {x: 0, y: -40}
+  rowHeight: 20
+--- !u!114 &9159573939375039746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125556334291256045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 4
+    m_Right: 4
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
