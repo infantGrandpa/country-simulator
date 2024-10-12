@@ -1,5 +1,6 @@
 using System;
-using CountrySimulator.GUI;
+using Abraham.CountrySimulator.Cities;
+using Abraham.CountrySimulator.GUI;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -25,7 +26,7 @@ namespace CountrySimulator.Cities
                 return;
             }
             
-            GameObject labelGameObject = SpatialCanvasManager.Instance.AddGameObjectToSpatialCanvas(cityLabelPrefab);
+            GameObject labelGameObject = GUIManager.Instance.InstantiateGameObjectOnSpatialCanvas(cityLabelPrefab);
             _myCityLabel = labelGameObject.GetComponent<CityLabelBehaviour>();
 
             if (_myCityLabel == null) {
@@ -33,7 +34,7 @@ namespace CountrySimulator.Cities
                 return;
             }
             
-            _myCityLabel.SetCityName(cityName);
+            _myCityLabel.InitializeLabel(cityName, transform.position);
 
         }
     }
