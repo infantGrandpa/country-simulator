@@ -1,9 +1,9 @@
-using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CityBehaviour : MonoBehaviour
 {
-    public string cityName;
+    [ReadOnly] public string cityName;
 
     void Start()
     {
