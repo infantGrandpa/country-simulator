@@ -4,6 +4,22 @@ using Random = UnityEngine.Random;
 
 public class CityNameManager : MonoBehaviour
 {
+    public static CityNameManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+                _instance = FindObjectOfType(typeof(CityNameManager)) as CityNameManager;
+
+            return _instance;
+        }
+        set
+        {
+            _instance = value;
+        }
+    }
+    private static CityNameManager _instance;
+    
     public class CityNames
     {
         public string[] cityNames;      //This MUST be the same name as the name in our json file
