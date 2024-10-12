@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cityNameLabel: {fileID: 104290559470629598}
+  labelOffset: {x: 0, y: -75}
 --- !u!1 &7856053881409322614
 GameObject:
   m_ObjectHideFlags: 0
