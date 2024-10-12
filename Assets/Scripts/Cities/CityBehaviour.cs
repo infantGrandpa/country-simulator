@@ -1,5 +1,4 @@
 using System;
-using Abraham.CountrySimulator.Cities;
 using Abraham.CountrySimulator.GUI;
 using Sirenix.OdinInspector;
 using UnityEngine;

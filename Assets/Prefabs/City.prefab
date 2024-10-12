@@ -115,3 +115,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a50eb0fc9eddfc54080d8af96181caf8, type: 2}
   - {fileID: 11400000, guid: 6ebccf33c682a524cbc3274f3eaa08bc, type: 2}
   resourcesInStorage: []
+  resourceStorageListPrefab: {fileID: 6125556334291256045, guid: c93bca6c2285ab44c91604e1249dcdc2, type: 3}

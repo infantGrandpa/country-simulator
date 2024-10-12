@@ -1,10 +1,8 @@
-using Abraham.CountrySimulator.GUI;
-using Abraham.GalacticConquest.GUI;
+
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Abraham.CountrySimulator.Cities
+namespace Abraham.CountrySimulator.GUI
 {
     public class CityLabelBehaviour : MonoBehaviour
     {
