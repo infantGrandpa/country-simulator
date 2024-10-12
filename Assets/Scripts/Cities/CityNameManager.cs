@@ -1,7 +1,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace CountrySimulator
+namespace CountrySimulator.Cities
 {
     public class CityNameManager : MonoBehaviour
     {

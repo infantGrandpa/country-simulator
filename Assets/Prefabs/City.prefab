@@ -97,3 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cityName: 
+  cityLabelPrefab: {fileID: 5731946268314714682, guid: 21333c8d75ece254989b3858f5fd455c, type: 3}
