@@ -1,12 +1,15 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-public class CityBehaviour : MonoBehaviour
+namespace CountrySimulator
 {
-    [ReadOnly] public string cityName;
-
-    void Start()
+    public class CityBehaviour : MonoBehaviour
     {
-        cityName = CityNameManager.Instance.GetRandomCityName();
+        [ReadOnly] public string cityName;
+
+        void Start()
+        {
+            cityName = CityNameManager.Instance.GetRandomCityName();
+        }
     }
 }

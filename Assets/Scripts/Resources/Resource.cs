@@ -1,7 +1,10 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Resource", menuName = "Resource")]
-public class Resource : ScriptableObject
+namespace CountrySimulator.Resources
 {
-    public string resourceName;
+    [CreateAssetMenu(fileName = "New Resource", menuName = "Resource")]
+    public class Resource : ScriptableObject
+    {
+        public string resourceName;
+    }
 }
