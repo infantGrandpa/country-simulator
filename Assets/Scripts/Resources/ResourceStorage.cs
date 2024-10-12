@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Abraham.CountrySimulator.GUI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Abraham.CountrySimulator.Resources
 {
     public class ResourceStorage : MonoBehaviour
     {
-        public List<Resource> tradableResources = new List<Resource>();
+        [FormerlySerializedAs("tradableResources")] public List<Resource> tradeableResources = new List<Resource>();
         
         public List<ResourceStack> resourcesInStorage= new List<ResourceStack>();
 
@@ -21,7 +22,7 @@ namespace Abraham.CountrySimulator.Resources
         }
         void InitializeStorage()
         {
-            foreach (Resource thisResource in tradableResources) {
+            foreach (Resource thisResource in tradeableResources) {
                 ResourceStack newResourceStack = new ResourceStack(thisResource);
                 resourcesInStorage.Add(newResourceStack);
             }
